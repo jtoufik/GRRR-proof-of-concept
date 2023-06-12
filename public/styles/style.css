@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ======================= Standaard eigen waardes ======================= */
+:root {
+
+    /* kleuren */
+    --primary-100: #01CBE1;
+    --primary-150: #1C526C;
+    --primary-200: #023A57;
+}
+
+header{
+    background-color: var(--primary-100) ;
+    display: flex;
+    align-items: center;
+}
+
+header svg{
+    margin: .2em;
+    width: 2.1em;
+    height: .8em;
+}
