@@ -122,16 +122,14 @@ main section:nth-of-type(1){
     padding: 1em;
     height: 11em;
     background-image:  url("/assets/header-bg2.png");
-    max-width: 39em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -10em;
+    background-blend-mode: color lightgrey;
+    max-width: 100%;
 }
 
-@container (min-width: 600px) {
-    main section:nth-of-type(1){
-        height: 16em;
-        max-width: 49em;
-        background-repeat: no-repeat;
-    }
-}
+
 
 h1, h2{
     color: var(--primary-200);
@@ -142,7 +140,7 @@ h1{
     margin-bottom: 1em;
     border-bottom: solid 2px  var(--primary-100);
     display: inline-block;
-    width: 110px;
+    width: 6.8em;
     padding-bottom: .5em;
 }
 
@@ -220,4 +218,66 @@ main section:nth-of-type(2){
 
 .btn-icon{
     justify-self: center;
+}
+
+@media (min-width: 600px) {
+    main section:nth-of-type(1){
+        height: 12em;
+    }
+
+    main h1{
+        font-size: .9em;
+        width: 7em;
+    }
+
+    main h2{
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 800px) {
+    main section:nth-of-type(1){
+        height: 14em;
+    }
+
+    main h1{
+        font-size: 1em;
+        width: 7.2em;
+    }
+
+    main h2{
+        font-size: 2.5em;
+    }
+
+    .intro-s {
+        font-size: 1.2em;
+        max-width: 35em;
+    }
+}
+
+@media (min-width: 1000px) {
+    main section:nth-of-type(1){
+        height: 17em;
+    }
+
+    main h1{
+        font-size: 1.2em;
+        width: 7.4em;
+    }
+
+    main h2{
+        font-size: 2.7em;
+    }
+}
+
+@media (min-width: 1200px) {
+    main section:nth-of-type(1){
+        height: 20em;
+    } 
+
+    main h1{
+        font-size: 1.5em;
+        width: 7.8em;
+    }
+
 }
