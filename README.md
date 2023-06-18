@@ -1,6 +1,6 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# GRRR - The Ocean Clean Up
+# The Ocean Clean Up - GRRR  
 
 In dit project ben ik in samenwerking met de opdrachtgever GRRR, waarbij ik als opdracht heb gekregen om een dashboard te ontwikkelen voor The Ocean Cleanup. Hier is de  progressie te zien van de opgehaalde plastic van alle Interceptors.
 
