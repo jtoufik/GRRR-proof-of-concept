@@ -200,24 +200,27 @@ main section:nth-of-type(2){
 }
 
 .btn-explore{
-    border: 0;
     cursor: pointer;
     padding: 15px 25px;
-    font-size: .9rem;
     background: var(--primary-200);
-    color: #fff;
-    display: inline-block;
     border-radius: 2px;
+    border: 0;
+
     font-family: "Proxima-Nova",sans-serif;
-    font-weight: 500;
     text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
+    font-size: .9rem;
+    color: #fff;
 
     display: grid;
     grid-template-columns: auto 1fr;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    transition: all .1s ease-in-out;
+}
+
+.btn-explore:hover{
+    background: #0f4b69;
+    transform: scale(1.02);
 }
 
 .btn-text{
@@ -228,6 +231,23 @@ main section:nth-of-type(2){
 .btn-icon{
     justify-self: center;
 }
+
+
+/* ================ MAP SECTION  ================ */
+
+.map-section {
+    display: none;
+}
+
+.toggle-button {
+    margin-bottom: 10px;
+}
+
+.toggle-button.active + .map-section {
+    display: block;
+}
+
+/* ================ MEDIAQUERYS  ================ */
 
 @media (min-width: 600px) {
     main section:nth-of-type(1){
