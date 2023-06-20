@@ -34,7 +34,7 @@ function initMap() {
     const marker = new google.maps.Marker(markerOptions);
 
     const infoWindow = new google.maps.InfoWindow({
-        content: '<h3>Interceptor 007</h3><p>Ballona Creek, LA, the United States of America</p>'
+        content: '<h3>Interceptor 007</h3><p>Ballona Creek, LA, the United States of America</p><img src="/assets/interceptor007.png" alt="Interceptor007" style="width: 310px; height: auto;">'
     });
 
     marker.addListener('click', function() {
