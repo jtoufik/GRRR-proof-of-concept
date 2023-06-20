@@ -312,7 +312,7 @@ main section:nth-of-type(2){
     }
 
     .map-container {
-        height: 19em;
+        height: 23em;
     }
 }
 
@@ -331,7 +331,7 @@ main section:nth-of-type(2){
     }
 
     .map-container {
-        height: 21em;
+        height: 26em;
     }
 }
 
@@ -350,10 +350,6 @@ main section:nth-of-type(2){
         line-height: 1.8em;
     }
 
-    .map-container {
-        height: 23em;
-    }
-
 }
 
 @media (min-width: 1600px) {
@@ -365,9 +361,6 @@ main section:nth-of-type(2){
         line-height: 2.1em;
     }
 
-    .map-container {
-        height: 25em;
-    }
 }
 
 @media (min-width: 1800px) {
