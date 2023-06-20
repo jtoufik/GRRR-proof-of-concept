@@ -10,10 +10,10 @@ function initMap() {
         center: { lat: 33.986261, lng: -118.438543 },
         zoom: 7,
         styles: [
-            { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#01CBE1' }] },
-            { featureType: 'landscape', elementType: 'geometry', stylers: [{ color: '#D9F6FA' }] },
+            { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#023A57' }] },
+            { featureType: 'landscape', elementType: 'geometry', stylers: [{ color: '#8AD3DC' }] },
             { featureType: 'administrative', elementType: 'geometry.fill', stylers: [{ color: '#1C526C' }] },
-            { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#BCF6EC' }] },
+            { featureType: 'poi.park', elementType: '.geometry.labels.text.fill', stylers: [{ visibility: 'off'  }] },
             { featureType: 'road', elementType: 'geometry', stylers: [{ visibility: 'off' }] },
             { featureType: 'transit', elementType: 'labels.icon', stylers: [{ visibility: 'off' }] },
             { featureType: 'transit', elementType: 'labels.text.fill', stylers: [{ visibility: 'off' }] },
