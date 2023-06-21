@@ -90,6 +90,10 @@ nav{
     border: none;
 }
 
+.nav-list li:nth-child(5){
+    display: none;
+}
+
 .nav-list a{
     color: var(--primary-200);
     font-family: "Proxima-Nova-Bold", "sans-serif";
@@ -325,7 +329,7 @@ main section:nth-of-type(2){
 
     height: 3em;
     padding-top: .5em;
-    border-top: 2px solid;
+    border-top: 2px solid var(--primary-100);
 }
 
 .progres-title h3{
@@ -419,9 +423,9 @@ main section:nth-of-type(2){
     
     .nav-list{ 
         width: 100%;
-        top: -9px;
+        top: 0;
         position: relative;
-        height: 3.5em;
+        height: 3.4em;
         background: none;
         transition: none;
 
@@ -431,19 +435,29 @@ main section:nth-of-type(2){
     }
 
     .nav-list li {
-        display: inline-block;
+        display: flex;
+        align-items: center;
         opacity: 1;
         margin: 0 10px;
+        padding: 0 1em;
         border-style: none;
         transition: none;
+    }
+
+    .nav-list li:nth-child(5){
+        display: flex;
     }
 
     .nav-item:nth-of-type(5) {
         display: flex;
         align-items: center;
         position: absolute; 
-        top: 8px; 
+        top: 15px; 
         right: 0; 
+    }
+
+    .nav-list a.active, .nav-list li a:hover{
+        transition: none;
     }
 
 
