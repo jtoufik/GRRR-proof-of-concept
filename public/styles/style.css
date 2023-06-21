@@ -38,13 +38,17 @@ html{
 
 /* ================ NAV MENU  ================ */
 
+header{
+    height: 3.5em;
+}
+
 nav{
     width: 100%;
     background: var(--primary-100);
     height: 3.5em;
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    border-bottom: solid 1px whitesmoke;
 }
 
 .logo-container{
@@ -74,6 +78,7 @@ nav{
 
 .nav-list li{
     opacity: 0;
+    z-index: -10r;
     line-height: 2.7em;
     padding: 1em;
     margin: 0 3em;
@@ -114,10 +119,18 @@ nav{
 
 #check:checked ~ .nav-list li {
     opacity: 1;
+    z-index: 99;
 }
 
+.btn-donate{
+    display: none;
+}
 
 /* ================ MAIN  ================ */
+
+main{
+    height: 40vh;
+}
 
 main section:nth-of-type(1){
     padding: 1em;
@@ -131,9 +144,9 @@ main section:nth-of-type(1){
     background-blend-mode: color lightgrey;
 
     position: relative;
-    top: 3.5em;
+    top: .5em;
     z-index: -1;
-    margin-bottom: 3.5em;
+    margin-bottom: .5em;
 
     text-transform: uppercase;
 }
@@ -236,8 +249,6 @@ main section:nth-of-type(2){
 
 .map-section {
     display: none;
-    /* position: relative;
-    z-index: -1; */
 
 }
 
@@ -303,22 +314,6 @@ main section:nth-of-type(2){
     width: 100%;
 }
 
-
-/* .progres-box::after {
-    content: "";
-    background-image: url(/assets/wave-box.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 100%;
-    height: 2em;
-    position: absolute;
-    bottom: -119px;
-    left: 19px;
-    overflow: hidden;
-
-} */
-
 .progres-title{
     display: flex;
     flex-direction: column;
@@ -353,6 +348,10 @@ main section:nth-of-type(2){
     position: relative;
     bottom: 11.5em;
 }
+
+/* ================ FOOTER  ================ */
+
+
 /* ================ MEDIAQUERYS  ================ */
 
 @media (min-width: 600px) {
@@ -396,7 +395,82 @@ main section:nth-of-type(2){
     .map-container {
         height: 23em;
     }
+
+    .nav-list li {
+        transition: 0;
+    }
 }
+
+@media (min-width: 900px){
+
+    nav{
+        background: rgb(249, 249, 249);
+        color: var(--primary-200);
+    }
+
+    .logo-container {
+        background: var(--primary-100);
+        padding-right: 0.8em;
+    }
+
+    #check, .hamburger{
+        display: none;
+    }
+    
+    .nav-list{ 
+        width: 100%;
+        top: -9px;
+        position: relative;
+        height: 3.5em;
+        background: none;
+        transition: none;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .nav-list li {
+        display: inline-block;
+        opacity: 1;
+        margin: 0 10px;
+        border-style: none;
+        transition: none;
+    }
+
+    .nav-item:nth-of-type(5) {
+        display: flex;
+        align-items: center;
+        position: absolute; 
+        top: 8px; 
+        right: 0; 
+    }
+
+
+    .btn-donate{
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        line-height: 1;
+        text-decoration: none;
+        text-align: left;
+    }
+    
+    .btn-donate span {
+        margin: -3px -12px;
+        display: block;
+        padding: 10px 12px;
+        border-radius: 2px;
+        background: #003755;
+        color: #fff;
+        position: relative;
+        font-family: "Proxima-Nova-Light";
+    }
+}
+
 
 @media (min-width: 1000px) {
     main section:nth-of-type(1){
