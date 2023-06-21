@@ -134,6 +134,8 @@ main section:nth-of-type(1){
     top: 3.5em;
     z-index: -1;
     margin-bottom: 3.5em;
+
+    text-transform: uppercase;
 }
 
 
@@ -159,7 +161,7 @@ h2:nth-of-type(1){
 }
 
 h2:nth-of-type(2){
-    font-family: "Proxima-Nova-Regular", "sans-serif";
+    font-family: "Proxima-Nova-Light", "sans-serif";
     margin-top: .3em;
 }
 
@@ -234,6 +236,9 @@ main section:nth-of-type(2){
 
 .map-section {
     display: none;
+    /* position: relative;
+    z-index: -1; */
+
 }
 
 .toggle-button {
@@ -271,6 +276,83 @@ main section:nth-of-type(2){
     height: auto;
 }
 
+/* ================ PROGRESS SECTION  ================ */
+.map-section article{
+    background-color: var(--primary-200);
+    height: 30em;
+    width: 100%;
+    display: inline-flex;
+    padding: 1em;
+}
+
+.progres-box{
+    background-color: var(--primary-150);
+    height: 28em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.progres-box::before{
+    content: "";
+    display: flex;
+    align-items: flex-end;
+    background-color: #fff;
+    height: 12em;
+    width: 100%;
+}
+
+
+/* .progres-box::after {
+    content: "";
+    background-image: url(/assets/wave-box.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 2em;
+    position: absolute;
+    bottom: -119px;
+    left: 19px;
+    overflow: hidden;
+
+} */
+
+.progres-title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 1.2em;
+    bottom: 14.5em;
+    color: var(--primary-150);
+    text-transform: uppercase;
+
+    height: 3em;
+    padding-top: .5em;
+    border-top: 2px solid;
+}
+
+.progres-title h3{
+    font-family: Proxima-Nova-Bold;
+}
+
+.progres-title h4{
+    font-family: Proxima-Nova-Light;
+}
+
+.operation-title{
+    display: inline-block;
+    color: var(--primary-100);
+    text-align: right;
+    text-transform: uppercase;
+    font-size: .8em;
+    width: 100%;
+    margin-right: 1.5em;
+    height: 2em;
+    position: relative;
+    bottom: 11.5em;
+}
 /* ================ MEDIAQUERYS  ================ */
 
 @media (min-width: 600px) {
