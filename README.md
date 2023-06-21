@@ -47,6 +47,9 @@ Mijn opdracht was een Dashboard te ontwikkelen voor The Ocean Cleanup. Ik dit do
 
 ## Bronnen
 
+* https://theoceancleanup.com/
+* https://youtube.com/
+
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
