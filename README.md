@@ -37,7 +37,6 @@ Mijn opdracht was een Dashboard te ontwikkelen voor The Ocean Cleanup. Ik dit do
 * Mobile-first ontworpen
 * Volledig responsive
 * Googlemaps API
-* NodeJS
 
 ## Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
