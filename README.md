@@ -2,10 +2,14 @@
 
 # The Ocean Clean Up - GRRR  
 
+*Inleiding:*
+
+In dit project ben ik in samenwerking met de opdrachtgever GRRR, waarbij ik als opdracht heb gekregen om een dashboard te ontwikkelen voor The Ocean Cleanup. Hier is de  progressie te zien van de opgehaalde plastic van alle Interceptors.
+
 <img width="710" alt="Scherm­afbeelding 2023-06-21 om 23 16 19" src="https://github.com/jtoufik/GRRR-proof-of-concept/assets/112856590/5b6102b0-a221-4082-bb83-a0fc513cd804">
 
 
-In dit project ben ik in samenwerking met de opdrachtgever GRRR, waarbij ik als opdracht heb gekregen om een dashboard te ontwikkelen voor The Ocean Cleanup. Hier is de  progressie te zien van de opgehaalde plastic van alle Interceptors.
+
 
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
